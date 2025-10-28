@@ -1,0 +1,112 @@
+{
+  "session_properties": {
+    "session_name": "Sealighter-BYOVD",
+    "output_format": "file",
+    "output_filename": "C:\\ProgramData\\Sealighter\\byovd.json",
+  },
+  "kernel_traces": [
+    {
+      "trace_name": "image_load_drivers",
+      "provider_name": "image_load",
+      "filters": {}
+    },
+    {
+      "trace_name": "File_events",
+      "provider_name": "file_io",
+      "filters": {}
+    },
+    {
+      "trace_name": "driver_events",
+      "provider_name": "driver",
+      "filters": {}
+    },
+    {
+      "trace_name": "virtualalloc_events",
+      "provider_name": "virtual_alloc",
+      "filters": {}
+    },
+    {
+      "trace_name": "process_trace_kernel",
+      "provider_name": "process",
+      "filters": {}
+    },
+    {
+      "trace_name": "threat_kernel",
+      "provider_name": "thread",
+      "filters": {}
+    },
+    {
+      "trace_name": "Contextswitch_kernel",
+      "provider_name": "context_switch",
+      "filters": {}
+    },
+    {
+      "trace_name": "kernel_registry_trace",
+      "provider_name": "registry",
+      "filters": {}
+    },
+    {
+      "trace_name": "memory_device_trace",
+      "provider_name": "system_call",
+      "filters": {}
+    }
+  ],
+  "user_traces": [
+    {
+      "trace_name": "ProcTrace01",
+      "provider_name": "Microsoft-Windows-Kernel-Process",
+      "keywords_any": 16,
+      "filters": {
+        "any_of": {
+          "event_id_is": [1, 2, 5, 6, 14]
+        }
+      }
+    },
+    {
+      "trace_name": "AuditAPITrace01",
+      "provider_name": "Microsoft-Windows-Kernel-Audit-API-Calls",
+      "keywords_any": 16,
+      "filters": {
+        "any_of": {
+          "event_id_is": [1, 2, 3, 4, 5]
+        }
+      }
+    },
+    {
+      "trace_name": "Kernel_Registry01",
+      "provider_name": "Microsoft-Windows-Kernel-Registry",
+      "keywords_any": 16,
+      "filters": {
+        "any_of": {
+          "event_id_is": [1, 2, 3, 5, 6, 7]
+        }
+      }
+    },
+    {
+      "trace_name": "ServiceTrace01",
+      "provider_name": "Microsoft-Windows-Services",
+      "keywords_any": 16,
+      "filters": {
+        "any_of": {
+          "event_id_is": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        }
+      }
+    },
+    {
+      "trace_name": "codeintegrity",
+      "provider_name": "Microsoft-Windows-CodeIntegrity",
+      "filters": {}
+    },
+    {
+      "trace_name": "codeintegrity",
+      "provider_name": "Microsoft-Windows-Sysmon-Operational",
+      "filters": {}
+    },
+    {
+      "trace_name": "deviceguard",
+      "provider_name": "Microsoft-Windows-DeviceGuard",
+      "filters": {}
+    }
+
+  ]
+}
