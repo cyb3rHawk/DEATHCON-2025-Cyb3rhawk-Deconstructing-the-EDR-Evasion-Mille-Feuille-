@@ -7,3 +7,6 @@ Objectives for this session:
 Break free from checkbox hunting. We’re going to understand hunting EDR “bypass”, using real exploitation, layered methodologies, and patterns adversaries can’t easily shake off.
 Decode how techniques like BYOVD, EDR bypass, and evolving toolkits work under the hood, and what this means for your hunts.
 Build actionable, modular hunt packages that you can take straight back to your environment.
+
+
+Install Jupyter - https://jupyter.org/install
